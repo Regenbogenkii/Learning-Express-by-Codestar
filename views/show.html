@@ -1,0 +1,13 @@
+<%
+    if (post==null){
+        post = {tilte:'',detail:''}
+    }
+
+%>
+
+Topic: <%= post.title %> <br>
+Detail: <br>
+<%= post.detail %>
+<% if (post.photo != null && post.photo != '') { %>
+    <img src = '/<%= post.photo%>' >
+<% } %>
